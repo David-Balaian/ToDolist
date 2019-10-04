@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="./todo.css">
     <script src="./todo.js"></script>
 </head>
-<body>
+<body onload="insertFromStorage()">
     <h1>TO DO list</h1>
     <div id="add">
         <span>
-            <input type="text" id="item" name="item" placeholder="Add Item" >
+            <input type="text" id="item" name="item" placeholder="Add Item" maxlength="10" >
         </span>
         <button class="inp" onclick="addlist()">Add</button>
     </div>
